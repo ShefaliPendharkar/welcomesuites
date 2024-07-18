@@ -42,6 +42,13 @@ $(document).ready(function () {
       }
     ]
   });
+  $(".quickView-slider").slick({
+    dots: false, arrows: true,
+    infinite: true,
+    speed: 300, autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
 
 
   // Counter function

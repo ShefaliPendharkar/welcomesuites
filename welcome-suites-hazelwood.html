@@ -228,7 +228,8 @@
                                 </div>
                                 <div>
                                     <a href="#" class="btn btn-theme">Book Now</a>
-                                    <a href="#" class="btn btn-themeBr">Quick view</a>
+                                    <a href="#" class="btn btn-themeBr" data-bs-toggle="modal"
+                                        data-bs-target="#quickView">Quick view</a>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +249,8 @@
                                 </div>
                                 <div>
                                     <a href="#" class="btn btn-theme">Book Now</a>
-                                    <a href="#" class="btn btn-themeBr">Quick view</a>
+                                    <a href="#" class="btn btn-themeBr" data-bs-toggle="modal"
+                                        data-bs-target="#quickView">Quick view</a>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +269,8 @@
                                 </div>
                                 <div>
                                     <a href="#" class="btn btn-theme">Book Now</a>
-                                    <a href="#" class="btn btn-themeBr">Quick view</a>
+                                    <a href="#" class="btn btn-themeBr" data-bs-toggle="modal"
+                                        data-bs-target="#quickView">Quick view</a>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +289,8 @@
                                 </div>
                                 <div>
                                     <a href="#" class="btn btn-theme">Book Now</a>
-                                    <a href="#" class="btn btn-themeBr">Quick view</a>
+                                    <a href="#" class="btn btn-themeBr" data-bs-toggle="modal"
+                                        data-bs-target="#quickView">Quick view</a>
                                 </div>
                             </div>
                         </div>
@@ -756,6 +760,46 @@
     </footer>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="quickView" tabindex="-1" aria-labelledby="quickViewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable  modal-quickView">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="quickView-slider slider">
+                                <div class="img-obj cover"><img src="assets/images/rooms1.png" alt="image"></div>
+                                <div class="img-obj cover"><img src="assets/images/rooms2.png" alt="image"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content">
+                                <h3>Premium Queen Suite Bedroom With Kitchen And Sofa Bed</h3>
+                                <p>For groups in need of a bit more room, this premium suite features extra seating
+                                    space to
+                                    get work done or just relax in.</p>
+                                <span><img src="assets/images/icon16.png" alt="icon">3 Guests / 1 Queen / 1 Sofa
+                                    Bed</span>
+                                <h5>Our Hotel Amenities :</h5>
+                                <ul class="listing-wrapper">
+                                    <li>Free Wi-fi </li>
+                                    <li>Stove top </li>
+                                    <li>Full size fridge </li>
+                                    <li>Air-conditioning </li>
+                                    <li>Microwave </li>
+                                    <li>Cable television </li>
+                                    <li>Bi-weekly housekeeping </li>
+                                    <li>Linen service (additional charge)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src=assets/js/jquery-3.7.1.min.js></script>
     <script src=assets/js/bootstrap.bundle.min.js></script>
     <script src=assets/js/jquery.lazy.min.js></script>
@@ -790,7 +834,14 @@
                     $("html").animate({ scrollTop: $(currentId).offset().top - 110 }, 0);
                 }, 10);
             });
+
         });
+
+        $('.modal').on('shown.bs.modal', function (e) {
+            $('.quickView-slider').slick('setPosition');
+        })
+
+
     </script>
 </body>
 

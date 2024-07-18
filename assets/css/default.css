@@ -2082,3 +2082,78 @@ header .nav-link {
 .reviews-slider .slick-dots {
     margin-top: 30px;
 }
+
+.modal-quickView .btn-close {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    z-index: 11;
+}
+
+.quickView-slider {
+    height: 450px;
+    padding-bottom: 0 !important;
+}
+
+.quickView-slider *:not(.slick-arrow) {
+    height: 100%;
+}
+
+.quickView-slider .slick-arrow {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+}
+
+.quickView-slider .slick-arrow:before {
+    font-size: 18px;
+}
+
+.quickView-slider .slick-prev {
+    left: 15px;
+}
+
+.quickView-slider .slick-next {
+    right: 15px;
+}
+
+.quickView-slider .slick-list,
+.quickView-slider .slick-slide {
+    margin: 0;
+}
+
+.modal-quickView .content {
+    padding: 24px 20px;
+    height: 450px;
+    overflow: auto;
+}
+
+.modal-quickView .content h3 {
+    margin-bottom: 8px;
+}
+
+.modal-quickView .content p {
+    line-height: 1.5;
+}
+
+.modal-quickView .content span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.modal-quickView .content span img {
+    width: 18px;
+    margin-right: 12px;
+}
+
+.modal-quickView .content h5 {
+    margin-bottom: 10px;
+}
+
+.modal-quickView ul.listing-wrapper {
+    display: grid;
+    grid-gap: 10px 7px;
+    grid-template-columns: repeat(2, 1fr);
+}

@@ -15,6 +15,10 @@
         --bs-gutter-y: 30px;
         --bs-gutter-x: 30px;
     }
+
+    .modal-quickView.modal-dialog-scrollable .modal-body {
+        overflow-y: visible;
+    }
 }
 
 @media (max-width: 1399px) {
@@ -364,6 +368,22 @@
         display: none;
     }
 
+    .quickView-slider {
+        /* height: 400px; */
+        height: 70vh;
+        max-height: 450px;
+    }
+
+    .modal-quickView .btn-close {
+        background-color: #fff;
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+    .modal-quickView .content {
+        height: auto;
+        padding: 20px 12px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -798,6 +818,18 @@
 
     .reviews-main .content {
         font-size: 17px;
+    }
+
+    .modal-quickView ul.listing-wrapper {
+        grid-gap: 5px 5px;
+    }
+
+    .modal-quickView .listing-wrapper li:before {
+        width: 12px;
+    }
+
+    .modal-quickView .listing-wrapper li {
+        padding-left: 20px;
     }
 }
 
